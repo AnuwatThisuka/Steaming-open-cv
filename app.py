@@ -103,8 +103,7 @@ def gen_frames():
                             img, counter_line)[2], img.shape[0]-bord), (0, 255, 0), 2)
                         if (x < x_line(img, counter_line)[1]) and state == 1:
                             state = 0
-                            #print("Counter: ", counfunc(count))
-                            print("Counter")
+                            print("Counter: ", counfunc(count))
                             cv2.line(img, (x_line(img, counter_line)[0], bord), (x_line(
                                 img, counter_line)[0], img.shape[0]-bord), (0, 250, 0), 5)
                     detect_line.remove((x, y))
